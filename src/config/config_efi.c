@@ -49,3 +49,11 @@ REQUIRE_OBJECT ( efi_fbcon );
 #ifdef DOWNLOAD_PROTO_FILE
 REQUIRE_OBJECT ( efi_local );
 #endif
+
+/*
+ * Drag in EFI-specific commands
+ *
+ */
+#ifdef EFIMAP_CMD
+REQUIRE_OBJECT ( efimap_cmd );
+#endif
